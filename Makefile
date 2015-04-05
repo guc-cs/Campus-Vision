@@ -7,10 +7,10 @@ ROOM_NO_DETECTOR = RoomNumberDetector
 all: $(COMPANY_LOGO_DETECTOR) $(ROOM_NO_DETECTOR)
 
 $(COMPANY_LOGO_DETECTOR):
-	$(CC) -o $(COMPANY_LOGO_DETECTOR) ./Company\ Logo\ Detector/Main.cpp $(CFLAGS)
+	$(CC) -o ./Company\ Logo\ Detector/$(COMPANY_LOGO_DETECTOR) ./Company\ Logo\ Detector/Main.cpp $(CFLAGS)
 
 $(ROOM_NO_DETECTOR):
-	$(CC) -o $(ROOM_NO_DETECTOR) ./Room\ Number\ Detector/Main.cpp $(CFLAGS)
+	$(CC) -o ./Room\ Number\ Detector/$(ROOM_NO_DETECTOR) ./Room\ Number\ Detector/Main.cpp $(CFLAGS)
 
 clean:
 	$(RM) $(ROOM_NO_DETECTOR) $(COMPANY_LOGO_DETECTOR)	
