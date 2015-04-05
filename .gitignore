@@ -1,0 +1,10 @@
+Debug/
+.cproject
+.project
+*~
+
+**/Debug/
+**/.cproject
+**/.project
+
+**/*~
